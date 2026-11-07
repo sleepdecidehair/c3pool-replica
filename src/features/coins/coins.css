@@ -1,0 +1,37 @@
+.coin-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.coin-cell__icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  object-fit: contain;
+}
+
+.coin-cell__symbol {
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+}
+
+.effort--good {
+  color: var(--color-success);
+  font-weight: var(--fw-semibold);
+}
+
+.effort--over {
+  color: var(--color-danger);
+  font-weight: var(--fw-semibold);
+}
+
+.profit--high {
+  color: var(--color-brand);
+  font-weight: var(--fw-semibold);
+}
+
+.profit--low {
+  color: var(--color-text-disabled);
+}

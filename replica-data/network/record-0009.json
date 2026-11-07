@@ -1,0 +1,13 @@
+{
+  "id": "mobile-app-record-3",
+  "capturedAt": "2026-11-07T08:41:21.405Z",
+  "sourceUrl": "https://api.c3pool.org/leaf/public/mobile-app",
+  "method": "GET",
+  "url": "https://api.c3pool.org/leaf/public/mobile-app",
+  "path": "/leaf/public/mobile-app",
+  "query": {},
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "body": "{\"androidUrl\":\"https://app.blockschina.net/app/android/c3pool-app-1.1.1.apk\",\"playUrl\":\"https://play.google.com/store/apps/details?id=org.c3pool.c3pool_app\",\"iosUrl\":\"\",\"androidVersion\":\"1.1.1\",\"iosVersion\":\"\",\"androidSize\":\"55 MB\"}"
+}

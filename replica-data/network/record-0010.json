@@ -1,0 +1,13 @@
+{
+  "id": "verify-record-3",
+  "capturedAt": "2026-11-07T08:41:09.882Z",
+  "sourceUrl": "https://api.c3pool.org/leaf/public/official-channels",
+  "method": "GET",
+  "url": "https://api.c3pool.org/leaf/public/official-channels",
+  "path": "/leaf/public/official-channels",
+  "query": {},
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "body": "[{\"type\":\"github\",\"value\":\"c3pool\",\"label\":\"GitHub\",\"url\":\"https://github.com/C3Pool\",\"section\":\"dev\",\"note\":{}},{\"type\":\"domain\",\"value\":\"c3pool.com\",\"label\":\"C3Pool 官网 / Official website\",\"url\":\"https://c3pool.com\",\"section\":\"site\",\"note\":{}},{\"type\":\"domain\",\"value\":\"c3pool.org\",\"label\":\"C3Pool 官网镜像 / Mirror\",\"url\":\"https://c3pool.org\",\"section\":\"site\",\"note\":{}},{\"type\":\"domain\",\"value\":\"api.c3pool.com\",\"label\":\"API\",\"url\":\"https://api.c3pool.com\",\"section\":\"site\",\"note\":{}},{\"type\":\"domain\",\"value\":\"api.c3pool.org\",\"label\":\"API\",\"url\":\"https://api.c3pool.org\",\"section\":\"site\",\"note\":{}},{\"type\":\"telegram\",\"value\":\"c3poolchinese\",\"label\":\"Telegram 中文群\",\"url\":\"https://t.me/C3PoolChinese\",\"section\":\"social\",\"note\":{}},{\"type\":\"x\",\"value\":\"c3_pool\",\"label\":\"X (Twitter)\",\"url\":\"https://x.com/C3_Pool\",\"section\":\"social\",\"note\":{}},{\"type\":\"discord\",\"value\":\"u56fgnnf2n\",\"label\":\"Discord\",\"url\":\"https://discord.gg/U56FGnNF2N\",\"section\":\"social\",\"note\":{}},{\"type\":\"email\",\"value\":\"support@c3pool.com\",\"label\":\"客服邮箱 / Support\",\"url\":\"\",\"section\":\"support\",\"note\":{}},{\"type\":\"email\",\"value\":\"feedback@c3pool.com\",\"label\":\"反馈邮箱 / Feedback\",\"url\":\"\",\"section\":\"support\",\"note\":{}}]"
+}

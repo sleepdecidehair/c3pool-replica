@@ -1,0 +1,16 @@
+{
+  "id": "altblocks-44107-0",
+  "capturedAt": "2026-11-07T08:48:30.080Z",
+  "sourceUrl": "https://api.c3pool.org/pool/coin_altblocks/44107?page=0&limit=15",
+  "method": "GET",
+  "url": "https://api.c3pool.org/pool/coin_altblocks/44107?page=0&limit=15",
+  "path": "/pool/coin_altblocks/44107",
+  "query": {
+    "page": "0",
+    "limit": "15"
+  },
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "body": "[{\"ts\":1793389043623,\"hash\":\"88b9628a6a3dac89ed4be0dc6cf0b9e057e9fba377ddf2747e3835bbc7501bf5\",\"diff\":1.3961731406617471e+22,\"shares\":1.08005147268964e+21,\"height\":135995,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":220899584523,\"pay_value\":5394378389832,\"pay_stage\":\"DONE\",\"pay_status\":\"\",\"port\":44107},{\"ts\":1793321830250,\"hash\":\"e4935f73256bcef501764f8d7eba6aea5e7cc203107a75588c1448649f23fb01\",\"diff\":1.3961411566911716e+22,\"shares\":4.761944041950269e+21,\"height\":135647,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":221095295582,\"pay_value\":5623036818516,\"pay_stage\":\"DONE\",\"pay_status\":\"\",\"port\":44107},{\"ts\":1793005944497,\"hash\":\"88f2ef0336efc0ecfcb0037f8d285924ac2d6d2d0e470dbb8641b2778bbdd5e6\",\"diff\":1.3334902406929858e+22,\"shares\":1.9011019352307633e+22,\"height\":133878,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":222097314329,\"pay_value\":6278817197700,\"pay_stage\":\"DONE\",\"pay_status\":\"\",\"port\":44107}]"
+}

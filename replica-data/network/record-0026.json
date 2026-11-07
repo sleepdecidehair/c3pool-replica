@@ -1,0 +1,16 @@
+{
+  "id": "altblocks-18090-0",
+  "capturedAt": "2026-11-07T08:48:12.609Z",
+  "sourceUrl": "https://api.c3pool.org/pool/coin_altblocks/18090?page=0&limit=15",
+  "method": "GET",
+  "url": "https://api.c3pool.org/pool/coin_altblocks/18090?page=0&limit=15",
+  "path": "/pool/coin_altblocks/18090",
+  "query": {
+    "page": "0",
+    "limit": "15"
+  },
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "body": "[{\"ts\":1792860887558,\"hash\":\"65339f36a862a49ed709f8e22025205f2e002fc34ffde8704f82667300000000\",\"diff\":7998525615,\"shares\":14739314336,\"height\":4393798,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":1281606290,\"pay_value\":4986000000,\"pay_stage\":\"DONE\",\"pay_status\":\"\",\"port\":18090}]"
+}

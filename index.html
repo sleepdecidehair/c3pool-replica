@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta
+      name="description"
+      content="C3Pool — 全球一站式挖礦綜合服務平台 / Global All-in-One Mining Pool"
+    />
+    <title>C3Pool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      html {
+        background-color: #f7f8fc;
+      }
+      html[data-theme="dark"] {
+        background-color: #050711;
+      }
+      html[data-theme="light"] {
+        background-color: #f7f8fc;
+      }
+      html:not(.theme-ready) body,
+      html:not(.theme-ready) body * {
+        transition: none !important;
+      }
+    </style>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("c3.theme");
+          var mode = stored;
+          if (!mode || mode === "system") {
+            mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", mode);
+        } catch (error) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

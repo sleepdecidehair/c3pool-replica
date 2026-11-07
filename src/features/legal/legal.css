@@ -1,0 +1,103 @@
+.legal-page {
+  width: 100%;
+}
+
+.legal-article {
+  width: 100%;
+  min-width: 0;
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: var(--fs-md);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  overflow-wrap: anywhere;
+}
+
+.legal-article__date {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+.legal-article__update-time {
+  margin: 0 0 var(--space-6);
+  font-size: var(--fs-xs);
+  line-height: 1.7;
+  color: var(--color-text-tertiary);
+}
+
+.legal-article__paragraph {
+  margin: 0 0 var(--space-4);
+}
+
+.legal-article__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.legal-article__section {
+  min-width: 0;
+}
+
+.legal-article__heading {
+  margin: var(--space-10) 0 var(--space-3);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+  scroll-margin-top: calc(var(--header-height) + var(--space-6));
+}
+
+.legal-article__section--h3 .legal-article__heading {
+  margin-top: var(--space-6);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+}
+
+.legal-article__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-4);
+  padding-left: var(--space-6);
+}
+
+.legal-article__list li {
+  padding-left: var(--space-1);
+}
+
+.legal-article__footer {
+  margin-top: var(--space-10);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-divider);
+}
+
+.legal-article__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-link);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.legal-article__back:hover {
+  color: var(--color-text-link-hover);
+}
+
+@media (max-width: 768px) {
+  .legal-article {
+    padding: var(--space-5);
+  }
+
+  .legal-article__heading {
+    margin-top: var(--space-8);
+    font-size: var(--fs-lg);
+  }
+
+  .legal-article__section--h3 .legal-article__heading {
+    margin-top: var(--space-5);
+    font-size: var(--fs-md);
+  }
+}

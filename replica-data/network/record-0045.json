@@ -1,0 +1,16 @@
+{
+  "id": "altblocks-8090-1",
+  "capturedAt": "2026-11-07T08:47:37.153Z",
+  "sourceUrl": "https://api.c3pool.org/pool/coin_altblocks/8090?page=1&limit=15",
+  "method": "GET",
+  "url": "https://api.c3pool.org/pool/coin_altblocks/8090?page=1&limit=15",
+  "path": "/pool/coin_altblocks/8090",
+  "query": {
+    "page": "1",
+    "limit": "15"
+  },
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "body": "[]"
+}

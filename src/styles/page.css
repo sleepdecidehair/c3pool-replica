@@ -1,0 +1,288 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--space-10) var(--space-6);
+}
+
+.page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.page__title {
+  margin: 0;
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.page__subtitle {
+  margin: var(--space-2) 0 0;
+  font-size: var(--fs-sm);
+  color: var(--color-text-tertiary);
+}
+
+.page__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--glass-border-strong), transparent 50%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.card--padded {
+  padding: var(--space-8);
+}
+
+.card--table {
+  padding: var(--space-2);
+}
+
+/* Arco table tuned to the original glass theme */
+.arco-table,
+.arco-table-container,
+.arco-table-content,
+.arco-table-body,
+.arco-table-scroll,
+.arco-table-element,
+.arco-table-tr,
+.arco-table-empty,
+.arco-table-placeholder {
+  background: transparent !important;
+}
+
+.arco-table-th {
+  background: var(--table-header-bg) !important;
+  color: var(--color-text-tertiary) !important;
+  font-size: var(--fs-xs) !important;
+  font-weight: var(--fw-semibold) !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  border-bottom: 1px solid var(--color-border) !important;
+}
+
+.arco-table-td {
+  background: transparent !important;
+  border-bottom: 1px solid var(--color-divider) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.arco-table-tr:hover .arco-table-td {
+  background: var(--table-row-hover) !important;
+}
+
+.arco-table-border .arco-table-th,
+.arco-table-border .arco-table-td {
+  border-color: var(--color-divider) !important;
+}
+
+.arco-table-pagination {
+  margin-top: var(--space-4);
+}
+
+/* Pagination / select / dropdown / form controls follow the glass theme */
+.arco-pagination-item {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  color: var(--color-text-secondary) !important;
+}
+
+.arco-pagination-item:hover {
+  background: var(--color-bg-hover) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.arco-pagination-item-active,
+.arco-pagination-item-active:hover {
+  background: var(--color-brand) !important;
+  border-color: var(--color-brand) !important;
+  color: #fff !important;
+}
+
+.arco-pagination-total-text,
+.arco-pagination-jumper,
+.arco-pagination-jumper-text,
+.arco-pagination-options {
+  color: var(--color-text-secondary) !important;
+}
+
+.arco-pagination-jumper-input,
+.arco-pagination-options .arco-select-view {
+  background: var(--glass-bg-strong) !important;
+  border-color: var(--glass-border) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.arco-select-view {
+  background: var(--glass-bg-strong) !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.arco-select-view:hover,
+.arco-select-focused .arco-select-view {
+  border-color: var(--color-brand) !important;
+}
+
+.arco-select-popup {
+  background: var(--color-bg-elevated) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.arco-select-option {
+  color: var(--color-text-primary) !important;
+}
+
+.arco-select-option:hover,
+.arco-select-option-active {
+  background: var(--color-bg-hover) !important;
+  color: var(--color-brand) !important;
+}
+
+.arco-dropdown-menu,
+.arco-dropdown,
+.arco-menu {
+  background: var(--color-bg-elevated) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.arco-dropdown-menu-item,
+.arco-menu-item {
+  color: var(--color-text-secondary) !important;
+}
+
+.arco-dropdown-menu-item:hover,
+.arco-menu-item:hover {
+  background: var(--color-bg-hover) !important;
+  color: var(--color-brand) !important;
+}
+
+.arco-input,
+.arco-textarea,
+.arco-input-inner,
+.arco-input-inner-wrapper {
+  background: var(--glass-bg-strong) !important;
+  border-color: var(--glass-border) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.arco-input::placeholder,
+.arco-textarea::placeholder {
+  color: var(--color-text-tertiary) !important;
+}
+
+.arco-tabs-header-title {
+  color: var(--color-text-secondary) !important;
+}
+
+.arco-tabs-header-title:hover,
+.arco-tabs-header-title-active {
+  color: var(--color-brand) !important;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .page__title {
+    font-size: var(--fs-2xl);
+  }
+}
+
+/* Not found */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 630px;
+  padding: 48px;
+  text-align: center;
+}
+
+.not-found__code {
+  font-family: var(--font-mono);
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -9.6px;
+  background: var(--gradient-hero);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.not-found__title {
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.not-found .arco-btn-primary {
+  background: #ff6b1a;
+  border-color: #ff6b1a;
+  box-shadow: 0 2px 0 rgba(255, 242, 228, 0.91);
+}
+
+.not-found .arco-btn-primary:hover {
+  background: #ff5c00;
+  border-color: #ff5c00;
+}
+
+@media (max-width: 576px) {
+  .not-found {
+    min-height: 60vh;
+    padding: 32px 16px;
+  }
+
+  .not-found__code {
+    font-size: 96px;
+    letter-spacing: -6px;
+  }
+
+  .not-found__title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "api-record-3",
+  "capturedAt": "2026-11-07T08:40:57.695Z",
+  "sourceUrl": "https://api.c3pool.org/leaf/public/api-docs",
+  "method": "GET",
+  "url": "https://api.c3pool.org/leaf/public/api-docs",
+  "path": "/leaf/public/api-docs",
+  "query": {},
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "body": "{}"
+}

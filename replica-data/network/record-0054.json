@@ -1,0 +1,16 @@
+{
+  "id": "altblocks-9200-0",
+  "capturedAt": "2026-11-07T08:47:50.218Z",
+  "sourceUrl": "https://api.c3pool.org/pool/coin_altblocks/9200?page=0&limit=15",
+  "method": "GET",
+  "url": "https://api.c3pool.org/pool/coin_altblocks/9200?page=0&limit=15",
+  "path": "/pool/coin_altblocks/9200",
+  "query": {
+    "page": "0",
+    "limit": "15"
+  },
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "body": "[{\"ts\":1792828596620,\"hash\":\"ba3f19f2080e4721deaa0377ef13680500013b13ec771f9d2a1c9d066a931b24\",\"diff\":374334886815,\"shares\":33219007808,\"height\":4594918,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":0,\"pay_value\":0,\"pay_stage\":\"Paid by other block\",\"pay_status\":\"Will be paid by block ef802e1cb0efe14324407593161090fd82682788ca04d0d116b0adbec9a60801 on 4593949 height\",\"port\":9200},{\"ts\":1792826787076,\"hash\":\"a802282b74ec234597891d1cfc6d3d5e3435cb455facc71a9230155a6729a44b\",\"diff\":371258663701,\"shares\":70798520256,\"height\":4594893,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":0,\"pay_value\":0,\"pay_stage\":\"Paid by other block\",\"pay_status\":\"Will be paid by block ef802e1cb0efe14324407593161090fd82682788ca04d0d116b0adbec9a60801 on 4593949 height\",\"port\":9200},{\"ts\":1792822928898,\"hash\":\"535f8fc37538c2f5f88b0965f142c774aee1f8faefa31e8f51b4f4d78b661818\",\"diff\":351965740261,\"shares\":997577567840,\"height\":4594817,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":0,\"pay_value\":0,\"pay_stage\":\"Paid by other block\",\"pay_status\":\"Will be paid by block ef802e1cb0efe14324407593161090fd82682788ca04d0d116b0adbec9a60801 on 4593949 height\",\"port\":9200},{\"ts\":1792770177548,\"hash\":\"ef802e1cb0efe14324407593161090fd82682788ca04d0d116b0adbec9a60801\",\"diff\":352349535160,\"shares\":475638255840,\"height\":4593949,\"valid\":true,\"unlocked\":false,\"pool_type\":\"pplns\",\"value\":19968893288545235000,\"pay_value\":0,\"pay_stage\":\"Waiting for more exchange blocks\",\"pay_status\":\"altblock_exchange_amount:19968893288545235000\",\"port\":9200}]"
+}

@@ -1,0 +1,394 @@
+.report-page .page-container {
+  max-width: none;
+  padding: 0;
+  gap: 0;
+}
+
+.report-page .page__header {
+  position: relative;
+  padding: 48px max(var(--space-6), calc((100% - 772px) / 2)) 32px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.report-page .page__header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(60% 80% at 0% 0%, rgba(255, 92, 0, 0.18), transparent 60%),
+    radial-gradient(50% 70% at 100% 20%, rgba(124, 58, 255, 0.1), transparent 65%);
+  pointer-events: none;
+}
+
+.report-page .page__header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.report-page .page__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  font-size: var(--fs-4xl);
+  letter-spacing: -0.02em;
+}
+
+.report-page__icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  flex: none;
+  border-radius: var(--radius-md);
+  background: var(--gradient-brand);
+  color: var(--color-text-inverse);
+  font-size: 28px;
+  box-shadow: var(--shadow-brand-glow);
+}
+
+.report-page .page__subtitle {
+  margin: var(--space-2) 0 0 84px;
+  font-size: var(--fs-base);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.report-page__subtitle-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.report-page__jump {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: var(--space-4);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-brand);
+}
+
+.report-page__jump:hover {
+  color: var(--color-brand-hover);
+}
+
+.report-page__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px var(--space-6) 64px;
+}
+
+.report-guide {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding: var(--space-5) var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-muted);
+}
+
+.report-guide__section h2 {
+  margin: 0 0 var(--space-3);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.report-guide__section ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.report-guide__mail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-divider);
+  font-size: var(--fs-sm);
+  color: var(--color-text-tertiary);
+}
+
+.report-guide__mail a {
+  color: var(--color-brand);
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.report-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.report-field > label,
+.report-field__label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.report-field__req {
+  color: var(--color-danger);
+}
+
+.report-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.report-cats .arco-btn {
+  height: auto;
+  padding: 8px var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-normal);
+  line-height: 1.6;
+}
+
+.report-cats .arco-btn:hover {
+  border-color: var(--color-border-strong);
+  color: var(--color-text-primary);
+}
+
+.report-cats .arco-btn-primary {
+  border-color: transparent;
+  background: var(--gradient-brand);
+  color: var(--color-text-inverse);
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6) var(--space-5);
+}
+
+.report-grid > .report-field:not(.report-field--half) {
+  grid-column: 1 / -1;
+}
+
+.report-page .arco-input,
+.report-page .arco-textarea {
+  padding: 12px var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-muted);
+  color: var(--color-text-primary);
+  font-size: var(--fs-md);
+}
+
+.report-page .arco-input {
+  height: 45px;
+}
+
+.report-page .arco-textarea {
+  line-height: 1.7;
+  resize: vertical;
+}
+
+.report-page .arco-input:hover,
+.report-page .arco-textarea:hover {
+  border-color: var(--color-border-strong);
+}
+
+.report-page .arco-input:focus,
+.report-page .arco-textarea:focus {
+  border-color: var(--color-brand);
+  box-shadow: var(--shadow-focus);
+}
+
+.report-page .mono {
+  font-family: var(--font-mono);
+}
+
+.report-page .arco-textarea.mono {
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+}
+
+.report-field__hint {
+  font-size: var(--fs-xs);
+  line-height: 1.6;
+  color: var(--color-text-tertiary);
+}
+
+.report-drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: var(--space-6) var(--space-4);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-muted);
+  text-align: center;
+  cursor: pointer;
+  transition:
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.report-drop:hover {
+  border-color: var(--color-brand);
+  background: var(--color-bg-hover);
+}
+
+.report-drop input {
+  display: none;
+}
+
+.report-drop__icon {
+  font-size: 26px;
+  color: var(--color-brand);
+}
+
+.report-drop__title {
+  font-size: var(--fs-sm);
+  color: var(--color-text-primary);
+}
+
+.report-drop__limits {
+  max-width: 420px;
+  font-size: var(--fs-xs);
+  line-height: 1.6;
+  color: var(--color-text-tertiary);
+}
+
+.report-files {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}
+
+.report-captcha {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-muted);
+  color: var(--color-text-tertiary);
+}
+
+.report-captcha > .arco-icon {
+  flex: none;
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+.report-captcha__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.report-captcha__label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.report-captcha__state {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}
+
+.report-submit.arco-btn {
+  align-self: flex-start;
+  height: 48px;
+  padding: 12px var(--space-8);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--gradient-brand);
+  color: var(--color-text-inverse);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+}
+
+.report-submit.arco-btn:hover {
+  background: var(--gradient-brand);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-brand-glow);
+}
+
+.report-submit.arco-btn:disabled {
+  opacity: 0.5;
+}
+
+.report-privacy {
+  margin: 0;
+  font-size: var(--fs-xs);
+  line-height: 1.7;
+  color: var(--color-text-tertiary);
+}
+
+@media (max-width: 768px) {
+  .report-page .page__header {
+    padding: var(--space-8) var(--space-4) var(--space-6);
+  }
+
+  .report-page .page__title {
+    gap: var(--space-3);
+    font-size: var(--fs-3xl);
+  }
+
+  .report-page__icon {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+
+  .report-page .page__subtitle {
+    margin-left: 64px;
+  }
+
+  .report-page__body {
+    padding: var(--space-6) var(--space-4) var(--space-12);
+  }
+
+  .report-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .report-grid > .report-field:not(.report-field--half) {
+    grid-column: auto;
+  }
+}

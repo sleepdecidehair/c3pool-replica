@@ -1,0 +1,16 @@
+{
+  "id": "altblocks-18148-0",
+  "capturedAt": "2026-11-07T08:48:19.377Z",
+  "sourceUrl": "https://api.c3pool.org/pool/coin_altblocks/18148?page=0&limit=15",
+  "method": "GET",
+  "url": "https://api.c3pool.org/pool/coin_altblocks/18148?page=0&limit=15",
+  "path": "/pool/coin_altblocks/18148",
+  "query": {
+    "page": "0",
+    "limit": "15"
+  },
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "body": "[{\"ts\":1792987273331,\"hash\":\"bdeec6790bfe76a5cd62209b71412dae343dc2cfb72db3ec77bf5423ceb1a1e6\",\"diff\":11358354,\"shares\":1717443,\"height\":373828,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":10045333567,\"pay_value\":18946800000,\"pay_stage\":\"DONE\",\"pay_status\":\"\",\"port\":18148},{\"ts\":1792049171186,\"hash\":\"2fe66a2ec40c604b8a7e62400b72b3982b465a24e16666e71a7ad55d938344fb\",\"diff\":10120656,\"shares\":455967,\"height\":366217,\"valid\":true,\"unlocked\":true,\"pool_type\":\"pplns\",\"value\":10112755644,\"pay_value\":24635300000,\"pay_stage\":\"DONE\",\"pay_status\":\"\",\"port\":18148}]"
+}

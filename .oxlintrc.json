@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "unicorn", "oxc"],
+  "env": {
+    "browser": true,
+    "es2024": true
+  },
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-await-in-loop": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unstable-nested-components": "off"
+  },
+  "ignorePatterns": ["dist/**", ".replica/**", "node_modules/**", "coverage/**"]
+}

@@ -1,0 +1,43 @@
+.payments__card {
+  overflow: hidden;
+}
+
+.payments__mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.payments__hash {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.payments__hash-code {
+  display: block;
+  overflow: hidden;
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color var(--transition-fast);
+}
+
+.payments__hash:hover .payments__hash-code,
+.payments__hash:focus-visible .payments__hash-code {
+  color: var(--color-brand);
+}
+
+.payments__empty {
+  padding: var(--space-10) var(--space-6);
+  color: var(--color-text-tertiary);
+  font-size: var(--fs-sm);
+  text-align: center;
+}
